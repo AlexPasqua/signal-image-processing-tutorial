@@ -12,6 +12,7 @@
 This is a very short and simple demo/tutorial for signal and image processing with **Matlab** without using specific high-level libraries
 
 #### Signal processing:
+Execute script [signal_filter.m](signal_filter.m)
 - We start from a clean sinusoid
 - Add some Gaussian noise and few other sinusoids ad different frequencies to mess the signal up a little bit.
 - Perform a **low pass filtering**
@@ -20,6 +21,7 @@ This is a very short and simple demo/tutorial for signal and image processing wi
 - plot the signals to see the results
 
 #### Image processing:
+Execute script [image_filter.m](image_filter.m)
 - Read the input image `lena_noise.png` -> it is a grayscale image with Gaussian noise
 - Create kernels/filters:
   - **Laplacian filtering:** edges enphasizing
