@@ -30,6 +30,7 @@ This is a very short and simple demo/tutorial for signal and image processing wi
 
 ## More in depth explanation
 ### More in depth signal processing:
+#### Low-pass filter:
 **LTI filter** --> system equation:
 <img src="https://render.githubusercontent.com/render/math?math=\Large \Sigma_{i=0}^n a_i v[k-i] = \Sigma_{i=0}^n b_i u[k-i]"><br>
 
@@ -45,11 +46,19 @@ In Matlab we have a signal with white noise and some high frequency disturbing c
 
 Output:
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large \Sigma_{k=0}^m a_k y[i-k] = \Sigma_{j=0}^n b_J x[i-j]"><br>
-<img src="https://render.githubusercontent.com/render/math?math=\Large y[i] = \frac{(\Sigma_{j=0}^n b_j x[i-j])-(\Sigma_{k=1}^m a_k y[i-k])}{a_0}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large \Sigma_{k=0}^m a_k y[i-k] = \Sigma_{j=0}^n b_J x[i-j]"><br><br>
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE y[i] = \frac{(\Sigma_{j=0}^n b_j x[i-j])-(\Sigma_{k=1}^m a_k y[i-k])}{a_0}">
 
 The i-th value of the output needs the previous output values, how many depends on the degree of the transfer function.<br>
 In out case the degree is 8, so I forced the first 7 values of the output to zero.<br>
 **Collateral effect:** this introduced a slight phase shifting
+
+#### Moving average:
+We have a window of dimension d, make it slide through the signal and every point of it is 	approximated to the average of the adjacent d values.<br>
+It’s important to choose a correct window dimension:<br>
+<div>
+  <img src="assets/moving_average-too_small_window.png" height=200>
+  <img src="assets/moving_average-too_large_window.png" height=200>
+</div>
 
 ### More in depth image processing
