@@ -6,6 +6,7 @@
 - [Image processing summary](#image-processing)
 - [More in depth signal processing](#more-in-depth-signal-processing)
 - [More in depth image processing](#more-in-depth-image-processing)
+- [Results](#results)
 ---
 
 ### Description
@@ -63,12 +64,6 @@ It’s important to choose a correct window dimension:<br>
   <img src="assets/moving_average-too_large_window.png" height=240>
 </div>
 
-#### Results:
-<div>
-  <img src="assets/result_signal_1.png" height=240>
-  <img src="assets/result_signal_2.png" height=240>
-</div>
-
 ### More in depth image processing
 **Image filtering:** create a kernel/filter and make it slide on the image performing **convolutions**
 
@@ -87,6 +82,13 @@ In our case, the input image is blurred and we apply:
 </div>
 
 #### Results:
+**Signal processing:**
+<div>
+  <img src="assets/result_signal_1.png" height=250>
+  <img src="assets/result_signal_2.png" height=250>
+</div>
+
+**Image processing:**
 <div>
   <img src="assets/starting_image.png" height=250>
   <!-- <img src="assets/arrow.png" width=80, height=40> -->
