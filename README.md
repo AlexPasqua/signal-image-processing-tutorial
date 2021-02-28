@@ -90,7 +90,7 @@ In our case, the input image is blurred and we apply:
 
 **Image processing:**
 <div>
-  <img src="assets/starting_image.png" height=250>
+  <img src="assets/starting_image.png" height=300>
   <!-- <img src="assets/arrow.png" width=80, height=40> -->
-  <img src="assets/result_image.png" height=250>
+  <img src="assets/result_image.png" height=300>
 </div>
