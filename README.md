@@ -79,3 +79,10 @@ In our case, the input image is blurred and we apply:
   <img src="assets/directional_filter.png" height=80 width=100>
   <img src="assets/high-pass_filter.png" height=80 width=100>
 </div>
+
+#### Results:
+<div>
+  <img src="assets/starting_image.png" height=250>
+  <img src="assets/arrow.png" width=80, height=40>
+  <img src="assets/result_image.png" height=250>
+</div>
