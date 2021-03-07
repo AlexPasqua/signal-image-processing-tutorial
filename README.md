@@ -63,8 +63,9 @@ It’s important to choose a correct window dimension:<br>
   <img src="assets/moving_average-too_small_window.png" height=240>
   <img src="assets/moving_average-too_large_window.png" height=240>
 </div>
+<br>
 
-### More in depth image processing
+### More in depth image processing:
 **Image filtering:** create a kernel/filter and make it slide on the image performing **convolutions**
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large g(x,y) = \omega * f(x,y) = \Sigma_{s=-a}^a \Sigma_{t=-b}^b \omega(s,t) f(x-s,y-t)"><br><br>
@@ -80,6 +81,7 @@ In our case, the input image is blurred and we apply:
   <img src="assets/directional_filter.png" height=80 width=100>
   <img src="assets/high-pass_filter.png" height=80 width=100>
 </div>
+<br>
 
 ### Results:
 **Signal processing:**
