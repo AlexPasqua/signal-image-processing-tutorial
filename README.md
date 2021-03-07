@@ -12,7 +12,7 @@
 ### Description
 This is a very short and simple demo/tutorial for signal and image processing with **Matlab** without using specific high-level libraries
 
-#### Signal processing:
+### Signal processing:
 Execute script [signal_filter.m](signal_filter.m)
 - We start from a clean sinusoid
 - Add some Gaussian noise and few other sinusoids ad different frequencies to mess the signal up a little bit.
@@ -21,7 +21,7 @@ Execute script [signal_filter.m](signal_filter.m)
 - Finally perform a moving average filtering on the previously low-pass filtered signal
 - plot the signals to see the results
 
-#### Image processing:
+### Image processing:
 Execute script [image_filter.m](image_filter.m)
 - Read the input image `lena_noise.png` -> it is a grayscale image with Gaussian noise
 - Create kernels/filters:
@@ -33,7 +33,7 @@ Execute script [image_filter.m](image_filter.m)
 
 ## More in depth explanation
 ### More in depth signal processing:
-#### Low-pass filter:
+### Low-pass filter:
 **LTI filter** --> system equation:
 <img src="https://render.githubusercontent.com/render/math?math=\Large \Sigma_{i=0}^n a_i v[k-i] = \Sigma_{i=0}^n b_i u[k-i]"><br>
 
@@ -56,7 +56,7 @@ The i-th value of the output needs the previous output values, how many depends 
 In out case the degree is 8, so I forced the first 7 values of the output to zero.<br>
 **Collateral effect:** this introduced a slight phase shifting
 
-#### Moving average:
+### Moving average:
 We have a window of dimension d, make it slide through the signal and every point of it is 	approximated to the average of the adjacent d values.<br>
 It’s important to choose a correct window dimension:<br>
 <div>
@@ -81,7 +81,7 @@ In our case, the input image is blurred and we apply:
   <img src="assets/high-pass_filter.png" height=80 width=100>
 </div>
 
-#### Results:
+### Results:
 **Signal processing:**
 <div>
   <img src="assets/result_signal_1.png" height=250>
